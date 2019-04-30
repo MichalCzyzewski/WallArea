@@ -2,8 +2,8 @@ package pl.mczyzewski;
 
 public class Wall
 {
-    double width;
-    double height;
+    private double width;
+    private double height;
 
     public Wall()
     {
@@ -60,5 +60,10 @@ public class Wall
             this.height = 0;
         }
 
+    }
+
+    public  double getArea()
+    {
+        return this.width*this.height;
     }
 }
